@@ -16,7 +16,7 @@ if not TRAINING:
     gpt2.load_gpt2(sess, run_name=RUN_NAME)  # The name of your checkpoint
     graph = gpt2.tf.compat.v1.get_default_graph()
 
-YOURNAME = "<@YOUR_BOT_ID_HERE>"
+YOURNAME = "<@ID_OF_PERSON_YOU_WANT_THE_BOT_TO_TRY_TO_PRETEND_TO_BE>"
 cmdqueue = 0
 
 if TRAINING:

@@ -1,5 +1,16 @@
-# yourAI
-GPT-2 Discord Bot and Steps to Train Something Like You
+# yourAI : Jazzv0
+GPT-2 Discord Bot and Steps to Train Something Like You : Jazz Edition
+
+## Notes from fork author:
+
+keep in mind that if you have unicode, chinese or really anything outside of the range of ASCII (probably), samples will not be generated. you can:
+
+* disable sample generation during fine tuning
+* edit gpt-2-simple to use utf-8 formatting
+
+i recommend you use [my discord chat exporter fork](https://github.com/zielo-hue/DiscordChatExporter) to export your to the format mentioned in the original readme
+
+# Original README below:
 
 ## My Environment (Important to Read)
 

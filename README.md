@@ -8,7 +8,8 @@ keep in mind that if you have unicode, chinese or really anything outside of the
 * disable sample generation during fine tuning
 * edit gpt-2-simple to use utf-8 formatting
 
-i recommend you use [my discord chat exporter fork](https://github.com/zielo-hue/DiscordChatExporter) to export your to the format mentioned in the original readme
+i recommend you use [my discord chat exporter fork](https://github.com/zielo-hue/DiscordChatExporter) to export your logs to the format mentioned in the original readme
+use txt mode
 
 # Original README below:
 

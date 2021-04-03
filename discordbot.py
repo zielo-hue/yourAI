@@ -16,7 +16,7 @@ if not TRAINING:
     gpt2.load_gpt2(sess, run_name=RUN_NAME)  # The name of your checkpoint
     graph = gpt2.tf.compat.v1.get_default_graph()
 
-YOURNAME = "<@ID_OF_PERSON_YOU_WANT_THE_BOT_TO_TRY_TO_PRETEND_TO_BE>"
+YOURNAME = "<@ID_OF_PERSON_YOU_WANT_THE_BOT_TO_IMITATE>"
 cmdqueue = 0
 
 if TRAINING:
@@ -44,12 +44,7 @@ async def on_message(message):
     randomizer = random.randint(1, 100)  # 1% chance for an unprovoked reply
     #what will provoke the bot?
     if bot.user.mention in message.content.replace('<@!', '<@') or "jb" in message.content.lower() \
-            or "jazzbot" in message.content.lower() or (1 == randomizer and message.channel.id == 558031640903942145):
-
-        if message.author.id == 171468411623178240:
-            async with message.channel.typing():
-                await message.reply("no")
-            return  # fuck you lore
+            or "jazzbot" in message.content.lower() or 1 == randomizer:
 
         if message.author == bot.user:
             return
